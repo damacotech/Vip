@@ -1,0 +1,56 @@
+{
+  "name": "vip-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://damaco-tech.com",
+  "dependencies": {
+    "@devexpress/dx-react-core": "2.6.2",
+    "@devexpress/dx-react-scheduler": "2.6.2",
+    "@devexpress/dx-react-scheduler-material-ui": "2.6.2",
+    "@fortawesome/fontawesome-free": "5.15.1",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.9.1",
+    "bootstrap": "4.5.3",
+    "chart.js": "2.9.4",
+    "classnames": "2.2.6",
+    "clsx": "^1.0.4",
+    "express": "^4.17.2",
+    "node-sass": "^7.0.1",
+    "node-sass-package-importer": "^3.0.4",
+    "perfect-scrollbar": "1.5.0",
+    "prop-types": "15.7.2",
+    "react": "17.0.1",
+    "react-app": "^1.1.2",
+    "react-chartjs-2": "2.11.1",
+    "react-dom": "17.0.1",
+    "react-material-ui-calendar": "0.2.3",
+    "react-notification-alert": "0.0.13",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "^5.0.0",
+    "reactstrap": "8.7.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && gulp licenses",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile-scss": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/vip-dashboard.scss src/assets/css/vip-dashboard.css",
+    "minify-scss": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/vip-dashboard.scss src/assets/css/vip-dashboard.min.css --output-style compressed",
+    "map-scss": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/vip-dashboard.scss src/assets/css/vip-dashboard.css --source-map true"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "optionalDependencies": {
+    "jquery": "3.5.1",
+    "typescript": "4.1.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-append-prepend": "1.0.8"
+  }
+}
